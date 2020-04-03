@@ -46,5 +46,5 @@
   "scripts": {
     "patch-release": "npm version patch && npm publish && git push --follow-tags"
   },
-  "version": "0.0.4"
+  "version": "0.0.5"
 }

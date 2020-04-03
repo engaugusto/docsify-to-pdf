@@ -15,9 +15,6 @@ module.exports = ({ pathToDocsifyEntryPoint, pathToStatic }) => (content, filePa
   const dir = path.dirname(filePath);
   const static = path.resolve(process.cwd(), pathToStatic);
 
-   logger.err('>>>>>>>>>>>>>> aooi 1 '+static);
-   logger.err('>>>>>>>>>>>>>> aooi 2 '+dir);
-
   markdownLinkExtractor(content)
     .filter(link => !isUrl(link))
     .filter(isImg)
